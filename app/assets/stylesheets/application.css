@@ -1,15 +1,112 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@charset "utf-8";
+
+
+
+  /* toppage*/
+  
+.toppage {
+  margin-top: 250px;
+}
+.toppage-content {
+  text-align: center;
+  font-size: 45px;
+  font-weight: normal;
+  font-style: italic;
+}
+.square_btn {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 37px;
+  color: #799dec;
+  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+
+.square_btn:active {
+  top: 4px;
+  text-shadow: none;
+}
+
+
+/*newページ*/
+
+.new-task {
+  margin-top: 90px;
+}
+
+.new-task p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 60px;
+  font-style: italic;
+  background-color: #FF9872;
+  margin-bottom: 50px;
+}
+
+.new {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+/*editページ*/
+
+.edit-task {
+  margin-top: 90px;
+}
+.edit-task p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 60px;
+  font-style: italic;
+  background-color: #FF9872;
+  margin-bottom: 50px;
+}
+
+.edit {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+/*indexページ*/
+
+
+.index {
+  margin-top: 120px;
+}
+
+.list-group-item {
+  font-size: 20px;
+}
+
+.list-group-item p {
+  display: inline;
+  word-break: break-all;
+}
+.panel-heading {
+  height: 50px;
+  color: #FF9872;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 33px;
+  font-style: italic;
+}
+
+.task p {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.home {
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 95px;
+}
+
+#footer {
+  margin-top: 200px;
+}

@@ -1,0 +1,32 @@
+<div class = "index">
+  <div class = "row">
+    <div class = "col-xs-offset-1 col-xs-10">
+      <div class = "task">
+        <div class = "text-center">
+            <div class = "panel panel-warning">
+              <div class = "panel-heading">
+                <span class = "panel-title">Today's Task</span>
+                  <button class = "btn btn-default pull-right">
+                    <span class = "glyphicon glyphicon-trash" aria-hidden = "true" ></span>
+                  </button>
+                </span>
+              </div>
+                <ul class="list-group">
+              		<% @tasks.each do |task| %>
+              		  <li class="list-group-item">
+              		    <span class = "delete pull-right">
+              		      <%= link_to "Delete", task, method: :delete, class: 'btn btn-danger' %>
+              		    </span>
+              		      <%= check_box_tag :sample %>
+                		    <p><%= link_to task.todo, edit_task_path(task) %></p>
+              		  </li>
+              		<% end %>
+              	</ul>
+            </div>
+          <p><%= link_to "タスク追加", new_task_path %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class = "home">&lt<%= link_to "HOME", root_url %></div>
