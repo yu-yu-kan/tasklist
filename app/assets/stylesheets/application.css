@@ -3,10 +3,22 @@
 
 
   /* toppage*/
-  
-.toppage {
-  margin-top: 250px;
+#box {
+  height: 100vh;
+  background-image: url("8a8320b3e63e28fa78a52562639c0cbb_m.jpg");
+  background-size: cover;
+  background-position: center;
 }
+
+.background {
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+}
+
+.toppage {
+  padding-top: 250px;
+}
+
 .toppage-content {
   text-align: center;
   font-size: 45px;
@@ -50,6 +62,7 @@
 
 
 /*editページ*/
+
 
 .edit-task {
   margin-top: 90px;
@@ -107,6 +120,3 @@
   margin-left: 95px;
 }
 
-#footer {
-  margin-top: 200px;
-}
